@@ -1,0 +1,120 @@
+/* Base Button Styles */
+.btn {
+  width: 220px;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* Hover Animation (shared) */
+.btn:hover {
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover::before {
+  animation: sh02 0.5s 0s linear;
+}
+
+.btn::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg);
+}
+
+/* Active State */
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+
+/* Specific Buttons */
+.SpotifyLogin {
+  border: 1px solid rgb(0, 218, 90);
+}
+
+.SpotifyLogin:hover {
+  background: rgb(0, 218, 90);
+  box-shadow: 0 0 30px 5px rgba(0, 218, 90, 0.8);
+}
+
+.LastFmLogin {
+  border: 1px solid #949494;
+}
+
+.LastFmLogin:hover {
+  background: #949494;
+  box-shadow: 0 0 30px 5px rgba(148, 148, 148, 0.8);
+}
+
+.AppleMusicLogin {
+  border: 1px solid #fb5c74;
+}
+
+.AppleMusicLogin:hover {
+  background: #fb5c74;
+  box-shadow: 0 0 30px 5px rgba(251, 92, 116, 0.8);
+}
+
+/* Animation Keyframes */
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 360px) {
+  .btn {
+    width: 160px;
+    padding: 8px 16px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}

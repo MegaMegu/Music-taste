@@ -1,0 +1,107 @@
+/*Phones */
+@media (max-width: 430px) {
+  .footer {
+    height: 120px;
+    background: linear-gradient(135deg, #0e2148, #483aa0);
+    font-family: "Acme", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7%;
+  }
+  .footer a {
+    color: #00eeff;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .platform {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .credits {
+    margin-top: 20px;
+  }
+}
+
+/*Tablets and big Phones */
+@media (min-width: 431px) and (max-width: 768px) {
+  .footer {
+    height: 120px;
+    background: linear-gradient(135deg, #0e2148, #483aa0);
+    font-family: "Acme", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+  }
+  .footer a {
+    color: #00eeff;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .platform {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .credits {
+    margin-top: 20px;
+  }
+}
+
+/*Laptops and desktops*/
+@media (min-width: 769px) and (max-width: 2650px) {
+  .footer {
+    height: 17vh;
+    background: linear-gradient(135deg, #0e2148, #483aa0);
+    font-family: "Acme", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer a {
+    color: #00eeff;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .platform {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .credits {
+    margin-top: 20px;
+  }
+}
