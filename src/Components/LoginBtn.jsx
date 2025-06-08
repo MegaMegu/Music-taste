@@ -1,10 +1,17 @@
 import React from "react";
-import "./Styles/loginbtn.css";
+import "./Styles/loginBtn.css";
+import { useNavigate } from "react-router";
 
 const LoginBtn = () => {
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate("/Home");
+  };
+
   return (
     <>
-      <button class="btn SpotifyLogin">
+      <button onClick={handleLoginClick} class="btn SpotifyLogin">
         <span>
           <svg
             viewBox="0 0 20 20"
@@ -54,7 +61,7 @@ const LoginBtn = () => {
         Spotify
       </button>
 
-      <button class="btn LastFmLogin">
+      <button onClick={handleLoginClick} class="btn LastFmLogin">
         <span>
           <svg
             fill="#ffffff"
@@ -82,7 +89,7 @@ const LoginBtn = () => {
         Last.fm
       </button>
 
-      <button class="btn AppleMusicLogin">
+      <button onClick={handleLoginClick} class="btn AppleMusicLogin">
         <span>
           <svg
             fill="#ffffff"
