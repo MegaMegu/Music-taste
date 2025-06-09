@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Home from "./Home";
 import "./index.css";
+import Spotify from "./Spotify";
 
 const root = document.getElementById("root");
 
@@ -14,6 +15,7 @@ createRoot(root).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Home" element={<Home />} />
+        <Route path="/Spotify" element={<Spotify />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
