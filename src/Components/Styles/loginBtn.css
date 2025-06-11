@@ -11,34 +11,30 @@
   background: transparent;
   color: #fff;
   overflow: hidden;
-  box-shadow: 0 0 0 0 transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  box-shadow: 0 0 0 0 transparent;
 }
 
-.btn span {
+.btn span,
+.btn svg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .btn svg {
-  display: block;
   width: 20px;
   height: 20px;
 }
 
-/* Hover Animation (shared) */
+/* Hover & Before Animation */
 .btn:hover {
   transition: all 0.2s ease-out;
-}
-
-.btn:hover::before {
-  animation: sh02 0.5s 0s linear;
 }
 
 .btn::before {
@@ -55,17 +51,20 @@
   transform: skewX(-20deg);
 }
 
+.btn:hover::before {
+  animation: sh02 0.5s linear;
+}
+
 /* Active State */
 button:active {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in;
 }
 
-/* Specific Buttons */
+/* Specific Button Themes */
 .SpotifyLogin {
   border: 1px solid rgb(0, 218, 90);
 }
-
 .SpotifyLogin:hover {
   background: rgb(0, 218, 90);
   box-shadow: 0 0 30px 5px rgba(0, 218, 90, 0.8);
@@ -74,7 +73,6 @@ button:active {
 .LastFmLogin {
   border: 1px solid #949494;
 }
-
 .LastFmLogin:hover {
   background: #949494;
   box-shadow: 0 0 30px 5px rgba(148, 148, 148, 0.8);
@@ -83,13 +81,12 @@ button:active {
 .AppleMusicLogin {
   border: 1px solid #fb5c74;
 }
-
 .AppleMusicLogin:hover {
   background: #fb5c74;
   box-shadow: 0 0 30px 5px rgba(251, 92, 116, 0.8);
 }
 
-/* Animation Keyframes */
+/* Hover Animation Keyframes */
 @keyframes sh02 {
   from {
     opacity: 0;
@@ -104,7 +101,7 @@ button:active {
   }
 }
 
-/* Media Query for Mobile */
+/* Mobile Adjustments */
 @media screen and (max-width: 360px) {
   .btn {
     width: 160px;

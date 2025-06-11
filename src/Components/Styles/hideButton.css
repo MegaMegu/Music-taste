@@ -1,0 +1,26 @@
+.hide {
+  margin-top: 0.8em;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  border-radius: 10px;
+  background: #483aa0;
+}
+
+.hide div {
+  color: #fff;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.customArtist {
+  font-size: 1em;
+}
+
+.hidelist {
+  font-size: 0.7em;
+}

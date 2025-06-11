@@ -1,0 +1,20 @@
+/*Phones */
+@media (max-width: 430px) {
+  .custom {
+    width: 90vw;
+  }
+}
+
+/*Tablets and big Phones */
+@media (min-width: 431px) and (max-width: 768px) {
+  .custom {
+    width: 60vw;
+  }
+}
+
+/*Laptops and desktops*/
+@media (min-width: 769px) and (max-width: 2650px) {
+  .custom {
+    height: 100vh;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Styles/loginBtn.css";
 import { useNavigate } from "react-router";
-import { handleButtonClick } from "../libs/spotify/handleButtonClick"
+import { handleButtonClick } from "../libs/spotify/handleButtonClick";
 
 const LoginBtn = () => {
   const navigate = useNavigate();
@@ -12,7 +12,10 @@ const LoginBtn = () => {
 
   return (
     <>
-      <button onClick={async () => await handleButtonClick()} class="btn SpotifyLogin">
+      <button
+        onClick={async () => await handleButtonClick()}
+        class="btn SpotifyLogin"
+      >
         <span>
           <svg
             viewBox="0 0 20 20"

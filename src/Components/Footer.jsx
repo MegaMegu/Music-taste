@@ -1,9 +1,12 @@
 import React from "react";
 import "./Styles/footer.css";
 
-const Footer = () => {
+const Footer = ({ backgroundStyle }) => {
+  const footerDynamicStyle = {
+    background: backgroundStyle || "linear-gradient(135deg, #0e2148, #483aa0)",
+  };
   return (
-    <footer className="footer">
+    <footer className="footer" style={footerDynamicStyle}>
       <div className="images">
         <span className="platform">
           <svg

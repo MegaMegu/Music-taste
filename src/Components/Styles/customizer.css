@@ -1,0 +1,85 @@
+/* Shared Styles */
+.czmizer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.czmizer h1,
+.czmizer h2,
+.czmizer input {
+  font-family: "Acme", sans-serif;
+  font-weight: 200;
+  color: #fff;
+  font-style: normal;
+}
+
+.czmizer input {
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  outline: none;
+  padding: 5px 0;
+  font-weight: 400;
+  font-size: 1.8em;
+  color: white;
+}
+
+.czmizer input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+/* Phones */
+@media (max-width: 578px) {
+  .czmizer h1 {
+    font-size: 2.5em;
+  }
+
+  .czmizer h2 {
+    font-size: 1.3em;
+  }
+
+  .czmizer input {
+    width: auto;
+  }
+}
+
+/* Tablets and Big Phones */
+@media (min-width: 579px) and (max-width: 768px) {
+  .czmizer {
+    width: auto;
+  }
+
+  .czmizer h1 {
+    font-size: 2.5em;
+  }
+
+  .czmizer h2 {
+    font-size: 1.3em;
+  }
+
+  .czmizer input {
+    width: 100%;
+  }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 769px) and (max-width: 2650px) {
+  .czmizer {
+    width: 100%;
+  }
+
+  .czmizer h1 {
+    font-size: 2.5em;
+  }
+
+  .czmizer h2 {
+    font-size: 1.3em;
+  }
+
+  .czmizer input {
+    width: 70%;
+  }
+}

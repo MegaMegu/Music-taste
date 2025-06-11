@@ -1,0 +1,27 @@
+.choicesButtons {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.choices {
+  padding: 0.8em;
+  border: 0.15rem solid #a387ff;
+  border-radius: 2em; /* Fully rounded */
+  background-color: transparent;
+  width: auto;
+  color: #fff;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.choices.active {
+  background-color: #7a5fff;
+  color: #fff;
+}

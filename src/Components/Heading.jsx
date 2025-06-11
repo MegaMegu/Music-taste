@@ -1,9 +1,21 @@
+// Heading.jsx
+import { useNavigate } from "react-router-dom";
 import "./Styles/heading.css";
 
-const Heading = ({ openModal }) => {
+const Heading = ({ openModal, backgroundStyle }) => {
+  const navigate = useNavigate();
+  const headerDynamicStyle = {
+    background: backgroundStyle || "linear-gradient(135deg, #0e2148, #483aa0)",
+  };
+
+  const handleLoginClick = () => {
+    navigate("/");
+  };
+
   return (
-    <header className="heading">
-      <h1>Music Taste</h1>
+    // Apply the dynamic style to the <header> element
+    <header className="heading" style={headerDynamicStyle}>
+      <h1 onClick={handleLoginClick}> Music Taste</h1>
       <div className="about-us">
         <button onClick={openModal}>
           <svg

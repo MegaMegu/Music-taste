@@ -34,6 +34,7 @@ h2 {
   font-family: "Acme", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: black;
 }
 
 h2 strong {
@@ -50,6 +51,9 @@ h2 strong {
 }
 
 .modal-content p {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1rem;
   color: #555;
   line-height: 1.5;

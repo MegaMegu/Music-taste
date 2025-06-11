@@ -1,0 +1,134 @@
+/* Global styles for save button */
+.savebtn {
+  margin: 1em;
+  align-self: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #cbd0fa;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #cbd0fa;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  position: relative;
+  transition: all 0.2s ease-in;
+}
+
+.savebtn:hover {
+  background: #cbd0fa;
+  color: #0e2148;
+  box-shadow: 0 0 30px 5px rgba(203, 208, 250, 0.5);
+  transition: all 0.2s ease-out;
+}
+
+.savebtn:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.savebtn::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg);
+}
+
+.savebtn:hover::before {
+  animation: sh02 0.5s 0s linear;
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/* Phones */
+@media (max-width: 578px) {
+  .homeBody {
+    background: linear-gradient(101deg, #483aa0, #0e2148);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0 40px 0;
+  }
+
+  .customizer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: center;
+    align-items: flex-start;
+    justify-content: start;
+    width: 90%;
+  }
+
+  .savebtn {
+    width: 98%;
+  }
+}
+
+/* Tablets and big phones */
+@media (min-width: 579px) and (max-width: 768px) {
+  .homeBody {
+    background: linear-gradient(101deg, #483aa0, #0e2148);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    padding: 2em 2em 4em 2em;
+  }
+
+  .customizer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+  }
+}
+
+/* Laptops and desktops */
+@media (min-width: 769px) and (max-width: 2650px) {
+  .homeBody {
+    background: linear-gradient(101deg, #483aa0, #0e2148);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 2em;
+    padding: 2em 2em 4em 2em;
+  }
+
+  .customizer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+  }
+}
