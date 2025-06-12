@@ -3,7 +3,7 @@ import "./Styles/design.css";
 
 const Design = () => {
   const [active, setActive] = useState(null);
-  const options = ["Mang Roy", "Ate V", "Aling Bebang"];
+  const options = ["Mang Roy", "Ate Vee", "Aling Bebang"];
 
   return (
     <div className="choicesButtons">

@@ -1,12 +1,11 @@
-import React from "react";
-import sample from "./Icons/sample.png";
+import AteVee from "./Icons/Ate Vee Template.png";
 import "./Styles/customSection.css";
 import HideButton from "./HideButton";
 
 const CustomSection = () => {
   return (
     <>
-      <img className="custom" src={sample} alt="background" />
+      <img className="custom" src={AteVee} alt="background" />
       <HideButton />
     </>
   );

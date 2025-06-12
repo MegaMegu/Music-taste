@@ -15,6 +15,6 @@
 /*Laptops and desktops*/
 @media (min-width: 769px) and (max-width: 2650px) {
   .custom {
-    height: 100vh;
+    height: 95vh;
   }
 }

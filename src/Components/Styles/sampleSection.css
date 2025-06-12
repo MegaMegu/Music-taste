@@ -1,9 +1,8 @@
 /*Phones */
 @media (max-width: 430px) {
   .sampleSection {
-    width: 100%;
+    width: 95vw;
     height: auto;
-    max-width: 360px;
     overflow: hidden;
     position: relative;
   }
@@ -16,11 +15,11 @@
   }
 
   .sample {
-    width: 290px;
-    height: auto;
+    width: auto;
+    height: 2000%;
     max-width: 300px;
     flex-shrink: 0;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   @keyframes slide {
@@ -53,7 +52,7 @@
   }
 
   .sample {
-    width: auto;
+    width: 80%;
     height: auto;
     max-width: 270px;
     flex-shrink: 0;
