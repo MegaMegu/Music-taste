@@ -15,7 +15,7 @@ createRoot(root).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Home" element={<Home />} />
-        <Route path="/Spotify" element={<Spotify />} />
+        <Route path="/spotify" element={<Spotify />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
