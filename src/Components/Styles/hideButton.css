@@ -8,6 +8,11 @@
   padding: 15px;
   border-radius: 10px;
   background: #483aa0;
+  cursor: pointer;
+}
+
+.hide:hover {
+  background: #2f266b;
 }
 
 .hide div {
