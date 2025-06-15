@@ -2,6 +2,8 @@
 @media (max-width: 430px) {
   .custom {
     width: 90vw;
+    border-radius: 10px;
+    transition: background-image 0.3s ease-in-out;
   }
 }
 
@@ -9,12 +11,61 @@
 @media (min-width: 431px) and (max-width: 768px) {
   .custom {
     width: 60vw;
+    border-radius: 10px;
+    transition: background-image 0.3s ease-in-out;
   }
 }
 
 /*Laptops and desktops*/
 @media (min-width: 769px) and (max-width: 2650px) {
   .custom {
+    display: block;
     height: 95vh;
+    transition: background-image 0.3s ease-in-out;
+  }
+  .Menu {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh; /* full screen height */
+    margin: 0 auto;
+  }
+
+  .userName {
+    display: block;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: white;
+    line-height: normal;
+    transform-origin: center top;
+  }
+  .ateVeeText {
+    padding-top: 10px;
+    letter-spacing: 4px;
+    font-size: 2.4em;
+    font-family: "Sarina", cursive;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke: 3px #ff6363;
+  }
+
+  .mangRoyText {
+    font-size: 3em;
+    letter-spacing: 1px;
+    color: #7b4019;
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 3px 3px #ffeea9;
+  }
+  .alingBebangText {
+    font-size: 3em;
+    color: #ffb823;
+    text-shadow: 3px 3px #2d4f2b;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
   }
 }

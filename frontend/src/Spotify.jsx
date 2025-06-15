@@ -3,6 +3,7 @@ import { useFetchTopArtists } from "./hooks/useFetchTopArtists";
 export default function Spotify() {
   const [topArtists, setRange] = useFetchTopArtists();
 
+  console.log(topArtists);
   return (
     <>
       {topArtists &&

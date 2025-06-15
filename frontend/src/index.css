@@ -4,3 +4,10 @@
   box-sizing: border-box;
   overscroll-behavior: none;
 }
+
+h1,
+h2 {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

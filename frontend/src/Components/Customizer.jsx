@@ -2,16 +2,29 @@ import "./Styles/customizer.css";
 import Range from "./Range";
 import Design from "./Design";
 
-const Customizer = () => {
+const Customizer = ({
+  active,
+  setActive,
+  title,
+  setTitle,
+  range,
+  setRange,
+}) => {
   return (
     <span className="czmizer">
       <h1>Customize</h1>
       <h2>Include top artist from</h2>
-      <Range />
+      <Range range={range} setRange={setRange} />
       <h2>Choose a style</h2>
-      <Design />
+      <Design active={active} setActive={setActive} />
       <h2>Name your Karinderya</h2>
-      <input type="text" placeholder="MusicTaste" />
+      <input
+        maxLength={30}
+        type="text"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="MusicTaste"
+      />
     </span>
   );
 };

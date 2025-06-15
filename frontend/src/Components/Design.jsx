@@ -1,8 +1,6 @@
-import { useState } from "react";
 import "./Styles/design.css";
 
-const Design = () => {
-  const [active, setActive] = useState(1);
+const Design = ({ active, setActive }) => {
   const options = ["Mang Roy", "Ate Vee", "Aling Bebang"];
 
   return (
