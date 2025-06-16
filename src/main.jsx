@@ -6,6 +6,7 @@ import App from "./App";
 import Home from "./Home";
 import "./index.css";
 import Spotify from "./Spotify";
+import SpotifyCallback from "./SpotifyCallback";
 
 const root = document.getElementById("root");
 
@@ -14,8 +15,11 @@ createRoot(root).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/spotify" element={<Spotify />} />
+        <Route path="home" element={<Home />} />
+        <Route path="spotify">
+          <Route index element={<Spotify />} />
+          <Route path="callback" element={<SpotifyCallback />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>
