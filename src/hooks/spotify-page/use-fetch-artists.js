@@ -53,5 +53,14 @@ export function useFetchArtists() {
     })()
   }, [navigate])
 
-  return [isLoading, longTermData, mediumTermData, shortTermData, errorMessage]
+  return [
+    isLoading,
+    longTermData,
+    setLongTermData,
+    mediumTermData,
+    setMediumTermData,
+    shortTermData,
+    setShortTermData,
+    errorMessage
+  ]
 }

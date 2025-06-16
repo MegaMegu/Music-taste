@@ -2,17 +2,40 @@ import "./Styles/homeBody.css";
 import CustomSection from "./CustomSection";
 import Customizer from "./Customizer";
 import { useState } from "react";
+import { useFetchArtists } from "../hooks/spotify-page/use-fetch-artists";
 
 const HomeBody = () => {
   const [activeIndex, setActiveIndex] = useState(1);
   const [title, setTitle] = useState("");
   const [range, setRange] = useState("lastYear"); // range now lives here
+  const [
+    isLoading,
+    longTermData,
+    setLongTermData,
+    mediumTermData,
+    setMediumTermData,
+    shortTermData,
+    setShortTermData,
+    errorMessage
+  ] = useFetchArtists()
 
   return (
     <>
       <main className="homeBody">
         <section>
-          <CustomSection active={activeIndex} title={title} range={range} />
+          <CustomSection
+            active={activeIndex}
+            title={title}
+            range={range}
+            isLoading={isLoading}
+            longTermData={longTermData}
+            setLongTermData={setLongTermData}
+            mediumTermData={mediumTermData}
+            setMediumTermData={setMediumTermData}
+            shortTermData={shortTermData}
+            setShortTermData={setShortTermData}
+            errorMessage={errorMessage}
+          />
         </section>
         <section className="customizer">
           <Customizer

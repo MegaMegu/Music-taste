@@ -26,7 +26,7 @@ export function useHandleSpotifyCallback() {
         return
       }
 
-      navigate("/spotify")
+      navigate("/home")
     })()
   }, [navigate])
 
