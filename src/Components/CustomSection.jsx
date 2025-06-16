@@ -10,8 +10,40 @@ import MangRoyLast4Weeks from "./Icons/MRl4w.png";
 
 import "./Styles/customSection.css";
 import HideButton from "./HideButton";
+import { useEffect } from "react";
 
-const CustomSection = ({ active, title, range }) => {
+const CustomSection = ({
+  active,
+  title,
+  range,
+  isLoading,
+  longTermData,
+  setLongTermData,
+  mediumTermData,
+  setMediumTermData,
+  shortTermData,
+  setShortTermData,
+  errorMessage
+}) => {
+  useEffect(() => {
+    switch (range) {
+      case "lastYear":
+        console.log(longTermData.map((data) => {
+          return { name: data.name, imageUrl: data.images.at(0).url }
+        }))
+        break
+      case "last6Months":
+        console.log(mediumTermData.map((data) => {
+          return { name: data.name, imageUrl: data.images.at(0).url }
+        }))
+        break
+      case "last4Weeks":
+        console.log(shortTermData.map((data) => {
+          return { name: data.name, imageUrl: data.images.at(0).url }
+        }))
+    }
+  }, [range, longTermData, mediumTermData, shortTermData])
+
   const textClasses = ["mangRoyText", "ateVeeText", "alingBebangText"];
   const selectedTextClass = textClasses[active] || "";
 
