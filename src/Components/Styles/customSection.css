@@ -68,4 +68,165 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  .Top1 {
+    display: block;
+    position: absolute;
+    color: #ff3a3a;
+    left: 38.5%;
+    top: 23.9%;
+    font-size: 1.5rem;
+  }
+  .Top2 {
+    display: block;
+    position: absolute;
+    color: #ff3a3a;
+    left: 38.5%;
+    top: 27.9%;
+    font-size: 0.8rem;
+  }
+  .Top3 {
+    display: block;
+    position: absolute;
+    color: #ff3a3a;
+    left: 38.5%;
+    top: 29.9%;
+    font-size: 0.8rem;
+  }
+  .Top4 {
+    display: block;
+    position: absolute;
+    color: #ff3a3a;
+    left: 38.5%;
+    top: 31.9%;
+    font-size: 0.8rem;
+  }
+  .Top5 {
+    display: block;
+    position: absolute;
+    color: #ff3a3a;
+    left: 38.5%;
+    top: 33.9%;
+    font-size: 0.8rem;
+  }
+  .Top6 {
+    display: block;
+    position: absolute;
+    color: #ff3a3a;
+    left: 38.5%;
+    top: 35.9%;
+    font-size: 0.8rem;
+  }
+  .Top7 {
+    display: block;
+    position: absolute;
+    color: #ff3a3a;
+    left: 38.5%;
+    top: 37.9%;
+    font-size: 0.8rem;
+  }
+  .Top8 {
+    display: block;
+    position: absolute;
+    color: #ff3a3a;
+    left: 38.5%;
+    top: 39.9%;
+    font-size: 0.8rem;
+  }
+  .tc2 .Top1 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 49.5%;
+  }
+  .tc2 .Top2 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 53.5%;
+  }
+  .tc2 .Top3 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 55.5%;
+  }
+  .tc2 .Top4 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 57.5%;
+  }
+  .tc2 .Top5 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 59.5%;
+  }
+  .tc2 .Top6 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 61.5%;
+  }
+  .tc2 .Top7 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 63.5%;
+  }
+  .tc2 .Top8 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 65.5%;
+  }
+  .tc3 .Top1 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 74.5%;
+  }
+  .tc3 .Top2 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 78.5%;
+  }
+  .tc3 .Top3 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 80.5%;
+  }
+  .tc3 .Top4 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 82.5%;
+  }
+  .tc3 .Top5 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 84.5%;
+  }
+  .tc3 .Top6 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 86.5%;
+  }
+  .tc3 .Top7 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 88.5%;
+  }
+  .tc3 .Top8 {
+    color: #ff3a3a;
+    display: block;
+    position: absolute;
+    top: 90.5%;
+  }
 }
