@@ -7,6 +7,7 @@ export function useFetchArtists() {
   const [isLoading, setIsLoading] = useState(true)
   const [errorMessage, setErrorMessage] = useState(undefined)
 
+  const [title, setTitle] = useState("MusicTaste")
   const [longTermData, setLongTermData] = useState([])
   const [mediumTermData, setMediumTermData] = useState([])
   const [shortTermData, setShortTermData] = useState([])
@@ -29,6 +30,13 @@ export function useFetchArtists() {
       const header = { Authorization: `Bearer ${token}` }
 
       try {
+        // para sa username ng user
+        const response = await fetch("https://api.spotify.com/v1/me", { headers: header })
+        const data = await response.json()
+        // if walang username, email nalangs
+        setTitle(data.display_name ?? data.email)
+
+        // top artists to
         const responses = await Promise.all(
           ranges.map(async (range) => {
             const url = appendTimeRange(range)
@@ -55,6 +63,8 @@ export function useFetchArtists() {
 
   return [
     isLoading,
+    title,
+    setTitle,
     longTermData,
     setLongTermData,
     mediumTermData,

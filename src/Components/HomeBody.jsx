@@ -6,10 +6,11 @@ import { useFetchArtists } from "../hooks/spotify-page/use-fetch-artists";
 
 const HomeBody = () => {
   const [activeIndex, setActiveIndex] = useState(1);
-  const [title, setTitle] = useState("");
   const [range, setRange] = useState("lastYear"); // range now lives here
   const [
     isLoading,
+    title,
+    setTitle,
     longTermData,
     setLongTermData,
     mediumTermData,
