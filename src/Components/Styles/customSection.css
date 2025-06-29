@@ -617,7 +617,7 @@
   }
 
   .lastYear .Top1 {
-    top: 23.9%;
+    top: 23.5%;
     font-size: 4.4vh;
   }
   .lastYear .Top2 {
@@ -696,7 +696,7 @@
 
   /* === LAST 6 MONTHS (Different Style) === */
   .last6months .Top1 {
-    font-size: 1.9vw;
+    font-size: 4.4vh;
   }
 
   .last6months .tc1 .Top1 {
@@ -756,7 +756,7 @@
 
   .last4weeks .Top1 {
     top: 23.9%;
-    font-size: 1.9vw;
+    font-size: 4.4vh;
   }
   .last4weeks .Top2 {
     top: 27.9%;
