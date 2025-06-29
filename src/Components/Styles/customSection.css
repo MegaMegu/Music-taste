@@ -2,25 +2,6 @@
 @media (max-width: 430px) {
   .custom {
     width: 90vw;
-    border-radius: 10px;
-    transition: background-image 0.3s ease-in-out;
-  }
-}
-
-/* ========== Tablets and big Phones ========== */
-@media (min-width: 431px) and (max-width: 768px) {
-  .custom {
-    width: 60vw;
-    border-radius: 10px;
-    transition: background-image 0.3s ease-in-out;
-  }
-}
-
-/* ========== Laptops and Desktops ========== */
-@media (min-width: 769px) and (max-width: 2650px) {
-  .custom {
-    display: block;
-    height: 95vh;
     transition: background-image 0.3s ease-in-out;
   }
 
@@ -29,7 +10,8 @@
     display: flex;
     justify-content: center;
     position: relative;
-    height: 100vh;
+    height: 100%;
+    width: auto;
     margin: 0 auto;
   }
 
@@ -43,13 +25,524 @@
   /* === Fonts by persona === */
   .ateVeeText {
     padding-top: 2vh;
-    letter-spacing: 4px;
+    letter-spacing: 0.8vw;
+    color: #fff;
+    font-size: 10.6vw;
+    font-family: "Gochi Hand", cursive;
+    font-weight: bold;
+    font-style: bold;
+    -webkit-text-stroke: 0.2vh #ff6363;
+  }
+
+  .mangRoyText {
+    font-size: 9.4vw;
+    letter-spacing: 0.2vw;
+    color: #7b4019;
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0.6vw 0.6vw #ffeea9;
+  }
+
+  .alingBebangText {
+    font-size: 9.4vw;
+    color: #ffb823;
+    text-shadow: 0.6vw 0.6vw #2d4f2b;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* === General .Top styles === */
+  /* Default .Top style */
+  .Top1,
+  .Top2,
+  .Top3,
+  .Top4,
+  .Top5,
+  .Top6,
+  .Top7,
+  .Top8 {
+    display: block;
+    position: absolute;
+    left: 38.5%;
+    font-size: 2vw;
+  }
+
+  /* Color by persona */
+  .menu.atevee .Top1,
+  .menu.atevee .Top2,
+  .menu.atevee .Top3,
+  .menu.atevee .Top4,
+  .menu.atevee .Top5,
+  .menu.atevee .Top6,
+  .menu.atevee .Top7,
+  .menu.atevee .Top8 {
+    color: #ff3a3a; /* red */
+  }
+
+  .menu.mangroy .Top1,
+  .menu.mangroy .Top2,
+  .menu.mangroy .Top3,
+  .menu.mangroy .Top4,
+  .menu.mangroy .Top5,
+  .menu.mangroy .Top6,
+  .menu.mangroy .Top7,
+  .menu.mangroy .Top8 {
+    color: #7b4019; /* brown */
+  }
+
+  .menu.alingbebang .Top1,
+  .menu.alingbebang .Top2,
+  .menu.alingbebang .Top3,
+  .menu.alingbebang .Top4,
+  .menu.alingbebang .Top5,
+  .menu.alingbebang .Top6,
+  .menu.alingbebang .Top7,
+  .menu.alingbebang .Top8 {
+    color: #2d4f2b; /* green */
+  }
+
+  .Top1 {
+    top: 24.9%;
+    font-size: 4.8vw;
+  }
+  .lastYear .Top2 {
+    top: 29.7%;
+  }
+  .lastYear .Top3 {
+    top: 31.7%;
+  }
+  .lastYear .Top4 {
+    top: 33.7%;
+  }
+  .lastYear .Top5 {
+    top: 35.7%;
+  }
+  .lastYear .Top6 {
+    top: 37.7%;
+  }
+  .lastYear .Top7 {
+    top: 39.7%;
+  }
+  .lastYear .Top8 {
+    top: 41.7%;
+  }
+
+  /* === Column 2 overrides === */
+  .lastYear .tc2 .Top1 {
+    top: 52.5%;
+  }
+  .lastYear .tc2 .Top2 {
+    top: 57%;
+  }
+  .lastYear .tc2 .Top3 {
+    top: 59%;
+  }
+  .lastYear .tc2 .Top4 {
+    top: 61%;
+  }
+  .lastYear .tc2 .Top5 {
+    top: 63%;
+  }
+  .lastYear .tc2 .Top6 {
+    top: 65%;
+  }
+  .lastYear .tc2 .Top7 {
+    top: 67%;
+  }
+  .lastYear .tc2 .Top8 {
+    top: 69%;
+  }
+
+  /* === Column 3 overrides === */
+  .lastYear .tc3 .Top1 {
+    top: 78.5%;
+  }
+  .lastYear .tc3 .Top2 {
+    top: 83%;
+  }
+  .lastYear .tc3 .Top3 {
+    top: 85%;
+  }
+  .lastYear .tc3 .Top4 {
+    top: 87%;
+  }
+  .lastYear .tc3 .Top5 {
+    top: 89%;
+  }
+  .lastYear .tc3 .Top6 {
+    top: 91%;
+  }
+  .lastYear .tc3 .Top7 {
+    top: 93%;
+  }
+  .lastYear .tc3 .Top8 {
+    top: 95%;
+  }
+
+  /* === LAST 6 MONTHS (Different Style) === */
+
+  .last6months .Top2 {
+    top: 29.7%;
+  }
+  .last6months .Top3 {
+    top: 31.7%;
+  }
+  .last6months .Top4 {
+    top: 33.7%;
+  }
+  .last6months .Top5 {
+    top: 35.7%;
+  }
+  .last6months .Top6 {
+    top: 37.7%;
+  }
+  .last6months .Top7 {
+    top: 39.7%;
+  }
+  .last6months .Top8 {
+    top: 41.7%;
+  }
+  .last6months .tc2 .Top1 {
+    top: 52.5%;
+  }
+  .last6months .tc2 .Top2 {
+    top: 57%;
+  }
+  .last6months .tc2 .Top3 {
+    top: 59%;
+  }
+  .last6months .tc2 .Top4 {
+    top: 61%;
+  }
+  .last6months .tc2 .Top5 {
+    top: 63%;
+  }
+  .last6months .tc2 .Top6 {
+    top: 65%;
+  }
+  .last6months .tc2 .Top7 {
+    top: 67%;
+  }
+  .last6months .tc2 .Top8 {
+    top: 69%;
+  }
+
+  /* === LAST 4 WEEKS (Different Style) === */
+  .last4weeks .Top2 {
+    top: 29.7%;
+  }
+  .last4weeks .Top3 {
+    top: 31.7%;
+  }
+  .last4weeks .Top4 {
+    top: 33.7%;
+  }
+  .last4weeks .Top5 {
+    top: 35.7%;
+  }
+  .last4weeks .Top6 {
+    top: 37.7%;
+  }
+  .last4weeks .Top7 {
+    top: 39.7%;
+  }
+  .last4weeks .Top8 {
+    top: 41.7%;
+  }
+}
+
+/* ========== Tablets and big Phones ========== */
+@media (min-width: 431px) and (max-width: 768px) {
+  .custom {
+    width: 60vw;
+    transition: background-image 0.3s ease-in-out;
+  }
+
+  .Menu {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .userName {
+    display: block;
+    position: absolute;
+    line-height: normal;
+    transform-origin: center top;
+  }
+
+  /* === Fonts by persona === */
+  .ateVeeText {
+    padding-top: 2vh;
+    letter-spacing: 0.8vw;
+    color: #fff;
+    font-size: 6.5vw;
+    font-family: "Gochi Hand", cursive;
+    font-weight: bold;
+    font-style: bold;
+    -webkit-text-stroke: 0.2vh #ff6363;
+  }
+
+  .mangRoyText {
+    font-size: 6.2vw;
+    letter-spacing: 0.2vw;
+    color: #7b4019;
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0.6vw 0.6vw #ffeea9;
+  }
+
+  .alingBebangText {
+    font-size: 6.4vw;
+    color: #ffb823;
+    text-shadow: 0.6vw 0.6vw #2d4f2b;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* === General .Top styles === */
+  /* Default .Top style */
+  .Top1,
+  .Top2,
+  .Top3,
+  .Top4,
+  .Top5,
+  .Top6,
+  .Top7,
+  .Top8 {
+    display: block;
+    position: absolute;
+    left: 38.5%;
+    font-size: 1.4vw;
+  }
+
+  /* Color by persona */
+  .menu.atevee .Top1,
+  .menu.atevee .Top2,
+  .menu.atevee .Top3,
+  .menu.atevee .Top4,
+  .menu.atevee .Top5,
+  .menu.atevee .Top6,
+  .menu.atevee .Top7,
+  .menu.atevee .Top8 {
+    color: #ff3a3a; /* red */
+  }
+
+  .menu.mangroy .Top1,
+  .menu.mangroy .Top2,
+  .menu.mangroy .Top3,
+  .menu.mangroy .Top4,
+  .menu.mangroy .Top5,
+  .menu.mangroy .Top6,
+  .menu.mangroy .Top7,
+  .menu.mangroy .Top8 {
+    color: #7b4019; /* brown */
+  }
+
+  .menu.alingbebang .Top1,
+  .menu.alingbebang .Top2,
+  .menu.alingbebang .Top3,
+  .menu.alingbebang .Top4,
+  .menu.alingbebang .Top5,
+  .menu.alingbebang .Top6,
+  .menu.alingbebang .Top7,
+  .menu.alingbebang .Top8 {
+    color: #2d4f2b; /* green */
+  }
+
+  .Top1 {
+    top: 24.9%;
+    font-size: 3.5vw;
+  }
+  .lastYear .Top2 {
+    top: 29.7%;
+  }
+  .lastYear .Top3 {
+    top: 31.7%;
+  }
+  .lastYear .Top4 {
+    top: 33.7%;
+  }
+  .lastYear .Top5 {
+    top: 35.7%;
+  }
+  .lastYear .Top6 {
+    top: 37.7%;
+  }
+  .lastYear .Top7 {
+    top: 39.7%;
+  }
+  .lastYear .Top8 {
+    top: 41.7%;
+  }
+
+  /* === Column 2 overrides === */
+  .lastYear .tc2 .Top1 {
+    top: 52.5%;
+  }
+  .lastYear .tc2 .Top2 {
+    top: 57%;
+  }
+  .lastYear .tc2 .Top3 {
+    top: 59%;
+  }
+  .lastYear .tc2 .Top4 {
+    top: 61%;
+  }
+  .lastYear .tc2 .Top5 {
+    top: 63%;
+  }
+  .lastYear .tc2 .Top6 {
+    top: 65%;
+  }
+  .lastYear .tc2 .Top7 {
+    top: 67%;
+  }
+  .lastYear .tc2 .Top8 {
+    top: 69%;
+  }
+
+  /* === Column 3 overrides === */
+  .lastYear .tc3 .Top1 {
+    top: 78.5%;
+  }
+  .lastYear .tc3 .Top2 {
+    top: 83%;
+  }
+  .lastYear .tc3 .Top3 {
+    top: 85%;
+  }
+  .lastYear .tc3 .Top4 {
+    top: 87%;
+  }
+  .lastYear .tc3 .Top5 {
+    top: 89%;
+  }
+  .lastYear .tc3 .Top6 {
+    top: 91%;
+  }
+  .lastYear .tc3 .Top7 {
+    top: 93%;
+  }
+  .lastYear .tc3 .Top8 {
+    top: 95%;
+  }
+
+  /* === LAST 6 MONTHS (Different Style) === */
+
+  .last6months .Top2 {
+    top: 29.7%;
+  }
+  .last6months .Top3 {
+    top: 31.7%;
+  }
+  .last6months .Top4 {
+    top: 33.7%;
+  }
+  .last6months .Top5 {
+    top: 35.7%;
+  }
+  .last6months .Top6 {
+    top: 37.7%;
+  }
+  .last6months .Top7 {
+    top: 39.7%;
+  }
+  .last6months .Top8 {
+    top: 41.7%;
+  }
+  .last6months .tc2 .Top1 {
+    top: 52.5%;
+  }
+  .last6months .tc2 .Top2 {
+    top: 57%;
+  }
+  .last6months .tc2 .Top3 {
+    top: 59%;
+  }
+  .last6months .tc2 .Top4 {
+    top: 61%;
+  }
+  .last6months .tc2 .Top5 {
+    top: 63%;
+  }
+  .last6months .tc2 .Top6 {
+    top: 65%;
+  }
+  .last6months .tc2 .Top7 {
+    top: 67%;
+  }
+  .last6months .tc2 .Top8 {
+    top: 69%;
+  }
+
+  /* === LAST 4 WEEKS (Different Style) === */
+  .last4weeks .Top2 {
+    top: 29.7%;
+  }
+  .last4weeks .Top3 {
+    top: 31.7%;
+  }
+  .last4weeks .Top4 {
+    top: 33.7%;
+  }
+  .last4weeks .Top5 {
+    top: 35.7%;
+  }
+  .last4weeks .Top6 {
+    top: 37.7%;
+  }
+  .last4weeks .Top7 {
+    top: 39.7%;
+  }
+  .last4weeks .Top8 {
+    top: 41.7%;
+  }
+}
+
+/* ========== Laptops and Desktops ========== */
+@media (min-width: 769px) {
+  .custom {
+    display: block;
+    height: 95vh;
+    transition: background-image 0.3s ease-in-out;
+  }
+
+  .Menu {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .userName {
+    display: block;
+    position: absolute;
+    line-height: normal;
+    transform-origin: center top;
+  }
+
+  /* === Fonts by persona === */
+  .ateVeeText {
+    padding-top: 2vh;
+    letter-spacing: 0.4vw;
     color: #fff;
     font-size: 4vw;
     font-family: "Gochi Hand", cursive;
     font-weight: bold;
     font-style: bold;
-    -webkit-text-stroke: 0.5vh #ff6363;
+    -webkit-text-stroke: 0.2vh #ff6363;
   }
 
   .mangRoyText {
@@ -121,81 +614,167 @@
     color: #2d4f2b; /* green */
   }
 
-  .Top1 {
+  .lastYear .Top1 {
     top: 23.9%;
     font-size: 1.9vw;
   }
-  .Top2 {
+  .lastYear .Top2 {
     top: 27.9%;
   }
-  .Top3 {
+  .lastYear .Top3 {
     top: 29.9%;
   }
-  .Top4 {
+  .lastYear .Top4 {
     top: 31.9%;
   }
-  .Top5 {
+  .lastYear .Top5 {
     top: 33.9%;
   }
-  .Top6 {
+  .lastYear .Top6 {
     top: 35.9%;
   }
-  .Top7 {
+  .lastYear .Top7 {
     top: 37.9%;
   }
-  .Top8 {
+  .lastYear .Top8 {
     top: 39.9%;
   }
 
   /* === Column 2 overrides === */
-  .tc2 .Top1 {
+  .lastYear .tc2 .Top1 {
     top: 49.5%;
   }
-  .tc2 .Top2 {
+  .lastYear .tc2 .Top2 {
     top: 53.5%;
   }
-  .tc2 .Top3 {
+  .lastYear .tc2 .Top3 {
     top: 55.5%;
   }
-  .tc2 .Top4 {
+  .lastYear .tc2 .Top4 {
     top: 57.5%;
   }
-  .tc2 .Top5 {
+  .lastYear .tc2 .Top5 {
     top: 59.5%;
   }
-  .tc2 .Top6 {
+  .lastYear .tc2 .Top6 {
     top: 61.5%;
   }
-  .tc2 .Top7 {
+  .lastYear .tc2 .Top7 {
     top: 63.5%;
   }
-  .tc2 .Top8 {
+  .lastYear .tc2 .Top8 {
     top: 65.5%;
   }
 
   /* === Column 3 overrides === */
-  .tc3 .Top1 {
+  .lastYear .tc3 .Top1 {
     top: 74.5%;
   }
-  .tc3 .Top2 {
+  .lastYear .tc3 .Top2 {
     top: 78.5%;
   }
-  .tc3 .Top3 {
+  .lastYear .tc3 .Top3 {
     top: 80.5%;
   }
-  .tc3 .Top4 {
+  .lastYear .tc3 .Top4 {
     top: 82.5%;
   }
-  .tc3 .Top5 {
+  .lastYear .tc3 .Top5 {
     top: 84.5%;
   }
-  .tc3 .Top6 {
+  .lastYear .tc3 .Top6 {
     top: 86.5%;
   }
-  .tc3 .Top7 {
+  .lastYear .tc3 .Top7 {
     top: 88.5%;
   }
-  .tc3 .Top8 {
+  .lastYear .tc3 .Top8 {
     top: 90.5%;
+  }
+
+  /* === LAST 6 MONTHS (Different Style) === */
+  .last6months .Top1 {
+    font-size: 1.9vw;
+  }
+
+  .last6months .tc1 .Top1 {
+    top: 23.9%;
+  }
+  .last6months .tc1 .Top2 {
+    top: 27.9%;
+  }
+  .last6months .tc1 .Top3 {
+    top: 29.9%;
+  }
+  .last6months .tc1 .Top4 {
+    top: 31.9%;
+  }
+  .last6months .tc1 .Top5 {
+    top: 33.9%;
+  }
+  .last6months .tc1 .Top6 {
+    top: 35.9%;
+  }
+  .last6months .tc1 .Top7 {
+    top: 37.9%;
+  }
+  .last6months .tc1 .Top8 {
+    top: 39.9%;
+  }
+
+  .last6months .tc2 .Top1 {
+    top: 49.5%;
+  }
+  .last6months .tc2 .Top1 {
+    top: 49.5%;
+  }
+  .last6months .tc2 .Top2 {
+    top: 53.5%;
+  }
+  .last6months .tc2 .Top3 {
+    top: 55.5%;
+  }
+  .last6months .tc2 .Top4 {
+    top: 57.5%;
+  }
+  .last6months .tc2 .Top5 {
+    top: 59.5%;
+  }
+  .last6months .tc2 .Top6 {
+    top: 61.5%;
+  }
+  .last6months .tc2 .Top7 {
+    top: 63.5%;
+  }
+  .last6months .tc2 .Top8 {
+    top: 65.5%;
+  }
+
+  /* === LAST 4 WEEKS (Different Style) === */
+
+  .last4weeks .Top1 {
+    top: 23.9%;
+    font-size: 1.9vw;
+  }
+  .last4weeks .Top2 {
+    top: 27.9%;
+  }
+  .last4weeks .Top3 {
+    top: 29.9%;
+  }
+  .last4weeks .Top4 {
+    top: 31.9%;
+  }
+  .last4weeks .Top5 {
+    top: 33.9%;
+  }
+  .last4weeks .Top6 {
+    top: 35.9%;
+  }
+  .last4weeks .Top7 {
+    top: 37.9%;
+  }
+  .last4weeks .Top8 {
+    top: 39.9%;
   }
 }

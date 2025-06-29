@@ -47,8 +47,8 @@
   }
 }
 
-/* Laptops and Desktops */
-@media (min-width: 769px) and (max-width: 2650px) {
+/* Laptops and Desktops — fixed */
+@media (min-width: 769px) {
   .heading {
     display: flex;
     align-items: center;

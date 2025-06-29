@@ -134,10 +134,10 @@ const CustomSection = ({
 
         {range === "last6Months" && (
           <div className="last6months">
-            {[0, 1, 2].map((colIndex) => (
+            {[0, 1].map((colIndex) => (
               <div className={`tc${colIndex + 1}`} key={colIndex}>
                 {[...Array(8)].map((_, rowIndex) => {
-                  const artistIndex = colIndex + rowIndex * 3;
+                  const artistIndex = colIndex + rowIndex * 2;
                   return (
                     <h2 className={`Top${rowIndex + 1}`} key={artistIndex}>
                       {topArtists[artistIndex]}

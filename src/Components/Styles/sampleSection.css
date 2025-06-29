@@ -71,7 +71,7 @@
 }
 
 /*Laptops and desktops*/
-@media (min-width: 769px) and (max-width: 2650px) {
+@media (min-width: 769px) {
   .sampleSection {
     width: 40%;
     height: 90%; /* Adjust based on how many images you want visible */

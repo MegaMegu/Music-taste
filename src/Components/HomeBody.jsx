@@ -16,8 +16,8 @@ const HomeBody = () => {
     setMediumTermData,
     shortTermData,
     setShortTermData,
-    errorMessage
-  ] = useFetchArtists()
+    errorMessage,
+  ] = useFetchArtists();
 
   return (
     <>
