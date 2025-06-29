@@ -9,8 +9,8 @@
 }
 
 .heading svg {
-  width: 20px;
-  height: 20px;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .heading h1 {
@@ -27,9 +27,9 @@
     justify-content: space-between;
     color: #fff;
     background: linear-gradient(135deg, #0e2148, #483aa0);
-    padding: 0 20px 0 25%;
+    padding: 0 2vw 0 25%;
     width: 100%;
-    height: 56px;
+    height: 15vh;
   }
 }
 
