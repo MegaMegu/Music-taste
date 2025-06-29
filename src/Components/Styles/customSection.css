@@ -509,10 +509,11 @@
 }
 
 /* ========== Laptops and Desktops ========== */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 2690px) {
   .custom {
     display: block;
     height: 95vh;
+    width: auto;
     transition: background-image 0.3s ease-in-out;
   }
 
@@ -531,14 +532,15 @@
     position: absolute;
     line-height: normal;
     transform-origin: center top;
+    font-size: 4vh;
   }
 
   /* === Fonts by persona === */
   .ateVeeText {
     padding-top: 2vh;
-    letter-spacing: 0.4vw;
+    letter-spacing: 0.7vh;
     color: #fff;
-    font-size: 4vw;
+    font-size: 9vh;
     font-family: "Gochi Hand", cursive;
     font-weight: bold;
     font-style: bold;
@@ -546,19 +548,19 @@
   }
 
   .mangRoyText {
-    font-size: 3.7vw;
-    letter-spacing: 0.1vw;
+    font-size: 7.9vh;
+    letter-spacing: 0.3vh;
     color: #7b4019;
     font-family: "Leckerli One", cursive;
     font-weight: 400;
     font-style: normal;
-    text-shadow: 0.3vw 0.3vw #ffeea9;
+    text-shadow: 0.6vh 0.6vh #ffeea9;
   }
 
   .alingBebangText {
-    font-size: 3.7vw;
+    font-size: 8.2vh;
     color: #ffb823;
-    text-shadow: 0.3vw 0.3vw #2d4f2b;
+    text-shadow: 0.9vh 0.9vh #2d4f2b;
     font-family: "Modak", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -577,7 +579,7 @@
     display: block;
     position: absolute;
     left: 38.5%;
-    font-size: 1vw;
+    font-size: 1.8vh;
   }
 
   /* Color by persona */
@@ -616,7 +618,7 @@
 
   .lastYear .Top1 {
     top: 23.9%;
-    font-size: 1.9vw;
+    font-size: 4.4vh;
   }
   .lastYear .Top2 {
     top: 27.9%;
