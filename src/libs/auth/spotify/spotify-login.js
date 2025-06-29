@@ -17,7 +17,7 @@ export async function spotifyLogin() {
 
   const codeChallenge = await getCodeChallenge(codeVerifier)
 
-  const scope = 'user-read-email user-top-read';
+  const scope = 'user-read-private user-read-email user-top-read';
   const authUrl = new URL("https://accounts.spotify.com/authorize")
 
   const params = {
