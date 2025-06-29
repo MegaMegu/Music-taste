@@ -1,4 +1,4 @@
-/*Phones */
+/* ========== Phones ========== */
 @media (max-width: 430px) {
   .custom {
     width: 90vw;
@@ -7,7 +7,7 @@
   }
 }
 
-/*Tablets and big Phones */
+/* ========== Tablets and big Phones ========== */
 @media (min-width: 431px) and (max-width: 768px) {
   .custom {
     width: 60vw;
@@ -16,217 +16,186 @@
   }
 }
 
-/*Laptops and desktops*/
+/* ========== Laptops and Desktops ========== */
 @media (min-width: 769px) and (max-width: 2650px) {
   .custom {
     display: block;
     height: 95vh;
     transition: background-image 0.3s ease-in-out;
   }
+
   .Menu {
     padding-top: 0;
     display: flex;
     justify-content: center;
     position: relative;
-    height: 100vh; /* full screen height */
+    height: 100vh;
     margin: 0 auto;
   }
 
   .userName {
     display: block;
     position: absolute;
-    font-weight: bolder;
-    font-size: 2.5em;
-    color: white;
     line-height: normal;
     transform-origin: center top;
   }
+
+  /* === Fonts by persona === */
   .ateVeeText {
-    padding-top: 10px;
+    padding-top: 2vh;
     letter-spacing: 4px;
-    font-size: 2.4em;
-    font-family: "Sarina", cursive;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-text-stroke: 3px #ff6363;
+    color: #fff;
+    font-size: 4vw;
+    font-family: "Gochi Hand", cursive;
+    font-weight: bold;
+    font-style: bold;
+    -webkit-text-stroke: 0.5vh #ff6363;
   }
 
   .mangRoyText {
-    font-size: 3em;
-    letter-spacing: 1px;
+    font-size: 3.7vw;
+    letter-spacing: 0.1vw;
     color: #7b4019;
     font-family: "Leckerli One", cursive;
     font-weight: 400;
     font-style: normal;
-    text-shadow: 3px 3px #ffeea9;
+    text-shadow: 0.3vw 0.3vw #ffeea9;
   }
+
   .alingBebangText {
-    font-size: 3em;
+    font-size: 3.7vw;
     color: #ffb823;
-    text-shadow: 3px 3px #2d4f2b;
+    text-shadow: 0.3vw 0.3vw #2d4f2b;
     font-family: "Modak", system-ui;
     font-weight: 400;
     font-style: normal;
   }
 
-  .Top1 {
-    display: block;
-    position: absolute;
-    color: #ff3a3a;
-    left: 38.5%;
-    top: 23.9%;
-    font-size: 1.5rem;
-  }
-  .Top2 {
-    display: block;
-    position: absolute;
-    color: #ff3a3a;
-    left: 38.5%;
-    top: 27.9%;
-    font-size: 0.8rem;
-  }
-  .Top3 {
-    display: block;
-    position: absolute;
-    color: #ff3a3a;
-    left: 38.5%;
-    top: 29.9%;
-    font-size: 0.8rem;
-  }
-  .Top4 {
-    display: block;
-    position: absolute;
-    color: #ff3a3a;
-    left: 38.5%;
-    top: 31.9%;
-    font-size: 0.8rem;
-  }
-  .Top5 {
-    display: block;
-    position: absolute;
-    color: #ff3a3a;
-    left: 38.5%;
-    top: 33.9%;
-    font-size: 0.8rem;
-  }
-  .Top6 {
-    display: block;
-    position: absolute;
-    color: #ff3a3a;
-    left: 38.5%;
-    top: 35.9%;
-    font-size: 0.8rem;
-  }
-  .Top7 {
-    display: block;
-    position: absolute;
-    color: #ff3a3a;
-    left: 38.5%;
-    top: 37.9%;
-    font-size: 0.8rem;
-  }
+  /* === General .Top styles === */
+  /* Default .Top style */
+  .Top1,
+  .Top2,
+  .Top3,
+  .Top4,
+  .Top5,
+  .Top6,
+  .Top7,
   .Top8 {
     display: block;
     position: absolute;
-    color: #ff3a3a;
     left: 38.5%;
-    top: 39.9%;
-    font-size: 0.8rem;
+    font-size: 1vw;
   }
+
+  /* Color by persona */
+  .menu.atevee .Top1,
+  .menu.atevee .Top2,
+  .menu.atevee .Top3,
+  .menu.atevee .Top4,
+  .menu.atevee .Top5,
+  .menu.atevee .Top6,
+  .menu.atevee .Top7,
+  .menu.atevee .Top8 {
+    color: #ff3a3a; /* red */
+  }
+
+  .menu.mangroy .Top1,
+  .menu.mangroy .Top2,
+  .menu.mangroy .Top3,
+  .menu.mangroy .Top4,
+  .menu.mangroy .Top5,
+  .menu.mangroy .Top6,
+  .menu.mangroy .Top7,
+  .menu.mangroy .Top8 {
+    color: #7b4019; /* brown */
+  }
+
+  .menu.alingbebang .Top1,
+  .menu.alingbebang .Top2,
+  .menu.alingbebang .Top3,
+  .menu.alingbebang .Top4,
+  .menu.alingbebang .Top5,
+  .menu.alingbebang .Top6,
+  .menu.alingbebang .Top7,
+  .menu.alingbebang .Top8 {
+    color: #2d4f2b; /* green */
+  }
+
+  .Top1 {
+    top: 23.9%;
+    font-size: 1.9vw;
+  }
+  .Top2 {
+    top: 27.9%;
+  }
+  .Top3 {
+    top: 29.9%;
+  }
+  .Top4 {
+    top: 31.9%;
+  }
+  .Top5 {
+    top: 33.9%;
+  }
+  .Top6 {
+    top: 35.9%;
+  }
+  .Top7 {
+    top: 37.9%;
+  }
+  .Top8 {
+    top: 39.9%;
+  }
+
+  /* === Column 2 overrides === */
   .tc2 .Top1 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 49.5%;
   }
   .tc2 .Top2 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 53.5%;
   }
   .tc2 .Top3 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 55.5%;
   }
   .tc2 .Top4 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 57.5%;
   }
   .tc2 .Top5 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 59.5%;
   }
   .tc2 .Top6 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 61.5%;
   }
   .tc2 .Top7 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 63.5%;
   }
   .tc2 .Top8 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 65.5%;
   }
+
+  /* === Column 3 overrides === */
   .tc3 .Top1 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 74.5%;
   }
   .tc3 .Top2 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 78.5%;
   }
   .tc3 .Top3 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 80.5%;
   }
   .tc3 .Top4 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 82.5%;
   }
   .tc3 .Top5 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 84.5%;
   }
   .tc3 .Top6 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 86.5%;
   }
   .tc3 .Top7 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 88.5%;
   }
   .tc3 .Top8 {
-    color: #ff3a3a;
-    display: block;
-    position: absolute;
     top: 90.5%;
   }
 }
