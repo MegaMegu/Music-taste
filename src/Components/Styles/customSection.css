@@ -251,12 +251,35 @@
   .last4weeks .Top8 {
     top: 41.7%;
   }
+
+  .top-artist-images {
+    display: flex; /* Set this to flex to use gap */
+    flex-direction: column; /* Vertical layout */
+    gap: 8.3vw; /* Adds vertical spacing between images */
+    position: absolute;
+    left: 8.7%;
+    margin-top: 27.49vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-artist-img {
+    width: 22.1vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .top-artist-images img:nth-child(2) {
+    margin-bottom: -1vw; /* Custom gap after 3rd image */
+  }
 }
 
 /* ========== Tablets and big Phones ========== */
 @media (min-width: 431px) and (max-width: 768px) {
   .custom {
+    display: block;
     width: 60vw;
+    height: auto;
     transition: background-image 0.3s ease-in-out;
   }
 
@@ -506,6 +529,27 @@
   .last4weeks .Top8 {
     top: 41.7%;
   }
+
+  .top-artist-images {
+    display: flex; /* Set this to flex to use gap */
+    flex-direction: column; /* Vertical layout */
+    gap: 5.5vw; /* Adds vertical spacing between images */
+    position: absolute;
+    left: 8.8%;
+    margin-top: 18.29vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-artist-img {
+    width: 14.7vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .top-artist-images img:nth-child(2) {
+    margin-bottom: -0.55vw; /* Custom gap after 2nd image */
+  }
 }
 
 /* ========== Laptops and Desktops ========== */
@@ -560,7 +604,7 @@
   .alingBebangText {
     font-size: 8.2vh;
     color: #ffb823;
-    text-shadow: 0.9vh 0.9vh #2d4f2b;
+    text-shadow: 0.5vh 0.5vh #2d4f2b;
     font-family: "Modak", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -617,7 +661,7 @@
   }
 
   .lastYear .Top1 {
-    top: 23.5%;
+    top: 23.1%;
     font-size: 4.4vh;
   }
   .lastYear .Top2 {
@@ -644,7 +688,7 @@
 
   /* === Column 2 overrides === */
   .lastYear .tc2 .Top1 {
-    top: 49.5%;
+    top: 49.2%;
   }
   .lastYear .tc2 .Top2 {
     top: 53.5%;
@@ -670,7 +714,7 @@
 
   /* === Column 3 overrides === */
   .lastYear .tc3 .Top1 {
-    top: 74.5%;
+    top: 74%;
   }
   .lastYear .tc3 .Top2 {
     top: 78.5%;
@@ -755,7 +799,7 @@
   /* === LAST 4 WEEKS (Different Style) === */
 
   .last4weeks .Top1 {
-    top: 23.9%;
+    top: 23.5%;
     font-size: 4.4vh;
   }
   .last4weeks .Top2 {
@@ -778,5 +822,26 @@
   }
   .last4weeks .Top8 {
     top: 39.9%;
+  }
+
+  .top-artist-images {
+    display: flex; /* Set this to flex to use gap */
+    flex-direction: column; /* Vertical layout */
+    gap: 7.1vh; /* Adds vertical spacing between images */
+    position: absolute;
+    left: 8.97%;
+    margin-top: 23.2vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-artist-img {
+    width: 18.5vh;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .top-artist-images img:nth-child(2) {
+    margin-bottom: -0.7vh; /* Custom gap after 3rd image */
   }
 }

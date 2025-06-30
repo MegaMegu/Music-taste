@@ -1,0 +1,117 @@
+/* Modal Backdrop */
+.save-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Modal Content */
+.save-modal {
+  background: #fff;
+  padding: 1.5rem;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeInPop 0.4s ease-out;
+  text-align: center;
+}
+
+/* Title */
+.save-modal h2 {
+  font-family: "Acme", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Image Preview */
+.preview-img {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ddd;
+}
+
+/* Button Container */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Buttons */
+.modal-buttons button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Download button */
+.modal-buttons button:first-child {
+  background-color: #483aa0;
+  color: white;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #382d85;
+}
+
+/* Cancel button */
+.modal-buttons button:last-child {
+  background-color: #e4e4e4;
+  color: #333;
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #d0d0d0;
+}
+
+/* Animation */
+@keyframes fadeInPop {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .save-modal {
+    padding: 1.2rem;
+    border-radius: 10px;
+  }
+
+  .save-modal h2 {
+    font-size: 1.3rem;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+  }
+
+  .modal-buttons button {
+    width: 100%;
+  }
+}

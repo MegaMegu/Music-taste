@@ -1,18 +1,34 @@
 .hide {
-  margin-top: 0.8em;
-  height: auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(101deg, #483aa0, #483aa0);
+  transition: transform 0.3s ease;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   padding: 15px;
-  border-radius: 10px;
-  background: #483aa0;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
   cursor: pointer;
+  border-radius: 10px;
 }
 
-.hide:hover {
-  background: #2f266b;
+.hide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(101deg, #0e2148, #2f266b);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.hide:hover::before {
+  opacity: 1;
+}
+
+.hide > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hide div {
@@ -28,4 +44,10 @@
 
 .hidelist {
   font-size: 0.7em;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .hide {
+    margin-top: 4.9vh;
+  }
 }

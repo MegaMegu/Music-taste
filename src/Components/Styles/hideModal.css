@@ -1,0 +1,129 @@
+/* Backdrop */
+.hide-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Modal box */
+.hide-modal {
+  background: #fff;
+  padding: 1.5rem;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeInPop 0.4s ease-out;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+/* Title */
+.hide-modal h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Show all link */
+.hide-modal .show-all {
+  color: #483aa0;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}
+
+/* Artist list container */
+.hide-modal .artist-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Artist item */
+.hide-modal .artist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.hide-modal .artist-item:last-child {
+  border-bottom: none;
+}
+
+/* Hidden artist appearance */
+.hide-modal .artist-item.hidden .name {
+  text-decoration: line-through;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+/* Name & icon spacing */
+.hide-modal .name {
+  flex: 1;
+  padding-right: 0.5rem;
+  text-align: left;
+}
+
+.hide-modal .icon {
+  font-size: 1.2rem;
+}
+
+/* Close button */
+.hide-modal .close-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #ff3a3a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.hide-modal .close-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Hover effect */
+.artist-item:hover {
+  background-color: #f5f5f5;
+  opacity: 1;
+}
+
+/* Animations */
+@keyframes fadeInPop {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

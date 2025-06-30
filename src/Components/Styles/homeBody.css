@@ -23,6 +23,7 @@
   color: #0e2148;
   box-shadow: 0 0 30px 5px rgba(203, 208, 250, 0.5);
   transition: all 0.2s ease-out;
+  cursor: pointer;
 }
 
 .savebtn:active {

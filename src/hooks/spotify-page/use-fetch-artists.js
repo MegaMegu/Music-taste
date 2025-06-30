@@ -1,65 +1,73 @@
-import { useEffect } from "react"
-import { useState } from "react"
-import { useNavigate } from "react-router"
-import Cookies from "js-cookie"
+import { useEffect } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import Cookies from "js-cookie";
 
 export function useFetchArtists() {
-  const [isLoading, setIsLoading] = useState(true)
-  const [errorMessage, setErrorMessage] = useState(undefined)
+  const [isLoading, setIsLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState(undefined);
 
-  const [title, setTitle] = useState("MusicTaste")
-  const [longTermData, setLongTermData] = useState([])
-  const [mediumTermData, setMediumTermData] = useState([])
-  const [shortTermData, setShortTermData] = useState([])
+  const [title, setTitle] = useState("MusicTaste");
+  const [longTermData, setLongTermData] = useState([]);
+  const [mediumTermData, setMediumTermData] = useState([]);
+  const [shortTermData, setShortTermData] = useState([]);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const token = Cookies.get("music_taste_spotify_access_token")
+    const token = Cookies.get("music_taste_spotify_access_token");
 
     if (!token) {
-      return navigate("/")
+      return navigate("/");
     }
 
     (async () => {
       function appendTimeRange(range) {
-        return `https://api.spotify.com/v1/me/top/artists?time_range=${range}&limit=24&offset=0`
+        return `https://api.spotify.com/v1/me/top/artists?time_range=${range}&limit=50&offset=0`;
       }
 
-      const ranges = ["long_term", "medium_term", "short_term"]
-      const header = { Authorization: `Bearer ${token}` }
+      const ranges = ["long_term", "medium_term", "short_term"];
+      const header = { Authorization: `Bearer ${token}` };
 
       try {
         // para sa username ng user
-        const response = await fetch("https://api.spotify.com/v1/me", { headers: header })
-        const data = await response.json()
+        const response = await fetch("https://api.spotify.com/v1/me", {
+          headers: header,
+        });
+        const data = await response.json();
         // if walang username, email nalangs
-        setTitle(data.display_name ?? data.email)
+        setTitle(data.display_name ?? data.email);
 
         // top artists to
         const responses = await Promise.all(
           ranges.map(async (range) => {
-            const url = appendTimeRange(range)
+            const url = appendTimeRange(range);
 
-            const response = await fetch(url, { headers: header })
-            const data = await response.json()
+            const response = await fetch(url, { headers: header });
+            const data = await response.json();
 
-            if (data.error) return navigate("/")
-            return { range, data: data.items }
+            if (data.error) return navigate("/");
+            return { range, data: data.items };
           })
-        )
+        );
 
-        setLongTermData(responses.find((response) => response.range === "long_term").data)
-        setMediumTermData(responses.find((response) => response.range === "medium_term").data)
-        setShortTermData(responses.find((response) => response.range === "short_term").data)
-        setIsLoading(false)
+        setLongTermData(
+          responses.find((response) => response.range === "long_term").data
+        );
+        setMediumTermData(
+          responses.find((response) => response.range === "medium_term").data
+        );
+        setShortTermData(
+          responses.find((response) => response.range === "short_term").data
+        );
+        setIsLoading(false);
       } catch (e) {
-        console.log(e)
-        setErrorMessage("Unexpected error")
-        setIsLoading(false)
+        console.log(e);
+        setErrorMessage("Unexpected error");
+        setIsLoading(false);
       }
-    })()
-  }, [navigate])
+    })();
+  }, [navigate]);
 
   return [
     isLoading,
@@ -71,6 +79,6 @@ export function useFetchArtists() {
     setMediumTermData,
     shortTermData,
     setShortTermData,
-    errorMessage
-  ]
+    errorMessage,
+  ];
 }
