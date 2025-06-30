@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@upstash/redis": "^1.35.0",
     "circletype": "^2.3.0",
     "html2canvas": "^1.4.1",
     "ioredis": "^5.6.1",
