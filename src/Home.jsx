@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <Heading
