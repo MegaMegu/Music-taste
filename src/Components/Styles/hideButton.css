@@ -46,8 +46,6 @@
   font-size: 0.7em;
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
-  .hide {
-    margin-top: 4.9vh;
-  }
+.hide {
+  margin-top: 4.9vh;
 }
