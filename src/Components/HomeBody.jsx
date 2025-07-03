@@ -89,7 +89,7 @@ const HomeBody = () => {
             Save And Share
           </button>
           <h1 className=" metrics">
-            {downloadCount} people created their karinderya via MusicTaste
+            {downloadCount} karinderyas have been opened through MusicTaste.
           </h1>
         </section>
       </main>
