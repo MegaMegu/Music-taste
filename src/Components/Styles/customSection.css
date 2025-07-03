@@ -1,7 +1,3 @@
-.userName {
-  overflow: hidden;
-}
-
 /* ========== Phones ========== */
 @media (max-width: 430px) {
   .custom {
