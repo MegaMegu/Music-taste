@@ -74,6 +74,10 @@
     gap: 10px;
     padding: 20px 0 40px 0;
   }
+  .metrics {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
 
   .customizer {
     display: flex;
@@ -133,4 +137,24 @@
     width: 40%;
     height: 100%;
   }
+}
+
+.metrics {
+  font-family: "Acme", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* responsive text size */
+  color: #483aa0;
+  background: #f5f4fe;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto 0;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.metrics:hover {
+  transform: scale(1.02);
+  background: linear-gradient(135deg, #e7e4ff, #f1f0fc);
 }

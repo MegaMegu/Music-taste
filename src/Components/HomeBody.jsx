@@ -88,7 +88,7 @@ const HomeBody = () => {
           <button className="savebtn" onClick={handleSave}>
             Save And Share
           </button>
-          <h1>
+          <h1 className=" metrics">
             {downloadCount} people created their karinderya via MusicTaste
           </h1>
         </section>
@@ -98,25 +98,29 @@ const HomeBody = () => {
         <SavePreviewModal
           image={previewImage}
           onDownload={async () => {
-            // Increment the Redis download count
             try {
+              // 🔁 Increment Redis counter
               const res = await fetch("/api/incrementDownload", {
                 method: "POST",
               });
+
+              if (!res.ok) throw new Error("Failed to increment");
+
               const data = await res.json();
-              setDownloadCount(data.count); // Optional: update count locally
+              setDownloadCount(data.count); // ✅ Update displayed count
             } catch (err) {
               console.error("Failed to increment download count:", err);
             }
 
-            // Then trigger the image download
+            // 💾 Trigger download
             const link = document.createElement("a");
             link.download = "music-taste.png";
             link.href = previewImage;
             link.click();
 
-            setShowSaveModal(false);
+            setShowSaveModal(false); // ✅ Close modal
           }}
+          onCancel={() => setShowSaveModal(false)}
         />
       )}
     </>

@@ -1,24 +1,42 @@
-/*Phones */
+/* === Global Styles === */
+.sampleSection {
+  overflow: hidden;
+  position: relative;
+}
+
+.sampleWrapper {
+  display: flex;
+  gap: 20px;
+  /* No animation here by default */
+}
+
+.animate-slide {
+  animation: slide 12s linear infinite;
+}
+
+.sample {
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* === Phones (max-width: 430px) === */
 @media (max-width: 430px) {
   .sampleSection {
     width: 95vw;
     height: auto;
-    overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-direction: row;
   }
 
   .sampleWrapper {
-    display: flex;
+    flex-direction: row;
     width: max-content;
-    gap: 20px;
-    animation: slide 10s linear infinite;
   }
 
   .sample {
     width: auto;
-    height: 2000%;
+    height: 180px;
     max-width: 300px;
-    flex-shrink: 0;
     object-fit: fill;
   }
 
@@ -27,39 +45,29 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(
-        -50%
-      ); /* Shift by HALF the width for seamless loop */
+      transform: translateX(-50%);
     }
   }
 }
 
-/*Tablets and big Phones */
+/* === Tablets (431px–768px) === */
 @media (min-width: 431px) and (max-width: 768px) {
   .sampleSection {
     width: 100%;
-    height: 700px; /* Adjust based on how many images you want visible */
     max-width: 700px;
-    overflow: hidden;
-    position: relative;
+    height: 700px;
   }
 
   .sampleWrapper {
-    display: flex;
-    flex-direction: column; /* Change direction to vertical */
-    gap: 20px;
-    animation: slide 10s linear infinite;
+    flex-direction: column;
   }
 
   .sample {
     width: 80%;
-    height: auto;
     max-width: 270px;
-    flex-shrink: 0;
-    object-fit: cover;
+    height: auto;
   }
 
-  /* Seamless vertical loop */
   @keyframes slide {
     0% {
       transform: translateY(0);
@@ -70,33 +78,25 @@
   }
 }
 
-/*Laptops and desktops*/
+/* === Laptops & Desktops (769px+) === */
 @media (min-width: 769px) {
   .sampleSection {
     width: 40%;
-    height: 90%; /* Adjust based on how many images you want visible */
+    height: 90%;
     max-width: 700px;
-    overflow: hidden;
-    position: relative;
   }
 
   .sampleWrapper {
-    display: flex;
-    flex-direction: column; /* Change direction to vertical */
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    animation: slide 10s linear infinite;
   }
 
   .sample {
     width: 80%;
-    height: auto;
     max-width: 700px;
-    flex-shrink: 0;
-    object-fit: cover;
+    height: auto;
   }
 
-  /* Seamless vertical loop */
   @keyframes slide {
     0% {
       transform: translateY(0);
