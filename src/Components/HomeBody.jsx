@@ -63,7 +63,7 @@ const HomeBody = () => {
           <CustomSection
             exportRef={exportRef}
             active={activeIndex}
-            title={title}
+            title={title ? `${title}'s` : ""}
             range={range}
             isLoading={isLoading}
             longTermData={longTermData}
