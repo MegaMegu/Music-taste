@@ -6,7 +6,7 @@
 }
 
 /* Allow .body to grow and push the footer down */
-.body {
+.buddy {
   flex: 1;
   background: linear-gradient(101deg, #0e2148, #483aa0);
   width: 100%;
@@ -28,13 +28,13 @@
   backdrop-filter: blur(8px);
 }
 
-.body h1 {
+.buddy h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
-.body h2 {
+.buddy h2 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
@@ -42,30 +42,30 @@
   color: #00eeff;
 }
 
-.body p {
+.buddy p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.body ul {
+.buddy ul {
   padding-left: 1.25rem;
   margin-bottom: 1rem;
 }
 
-.body li {
+.buddy li {
   list-style-type: disc;
   margin-bottom: 0.5rem;
 }
 
-.body a {
+.buddy a {
   color: #00eeff;
   text-decoration: underline;
 }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-  .body {
+  .buddy {
     padding: 1.5rem 1rem;
   }
 
@@ -73,31 +73,31 @@
     padding: 1.5rem;
   }
 
-  .body h1 {
+  .buddy h1 {
     font-size: 1.75rem;
   }
 
-  .body h2 {
+  .buddy h2 {
     font-size: 1.25rem;
   }
 
-  .body p,
-  .body li {
+  .buddy p,
+  .buddy li {
     font-size: 0.95rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .body h1 {
+  .buddy h1 {
     font-size: 1.5rem;
   }
 
-  .body h2 {
+  .buddy h2 {
     font-size: 1.1rem;
   }
 
-  .body p,
-  .body li {
+  .buddy p,
+  .buddy li {
     font-size: 0.9rem;
   }
 }
