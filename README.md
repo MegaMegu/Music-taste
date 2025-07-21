@@ -78,3 +78,5 @@ cd Music-taste
 
 # 3. Install dependencies
 npm install
+
+### ▶️ Usage
