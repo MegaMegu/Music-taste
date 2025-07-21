@@ -3,12 +3,11 @@
 <h2 align="center"> Discover Your Music Taste, Unleash Your Unique Sound </h2>
 
 <p align="center">
-![Last Commit](https://img.shields.io/github/last-commit/SeanMegusean/Music-taste)
-![JavaScript](https://img.shields.io/badge/javascript-52.6%25-yellow.svg)
-![Languages](https://img.shields.io/badge/languages-3-blue.svg)
+  <img src="https://img.shields.io/github/last-commit/SeanMegusean/Music-taste" alt="Last Commit"/>
+  <img src="https://img.shields.io/badge/javascript-52.6%25-yellow.svg" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/languages-3-blue.svg" alt="Languages"/>
 </p>
 
----
 <h2 align="center">
 ## ✨ Built with the tools and technologies:
 </h2>
