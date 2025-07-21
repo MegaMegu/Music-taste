@@ -2,8 +2,15 @@ import React from "react";
 import "./Styles/body.css";
 import LoginBtn from "./LoginBtn";
 import SampleSection from "./SampleSection";
+import { useNavigate } from "react-router";
 
 const Body = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/privacy-policy");
+  };
+
   return (
     <>
       <main className="body">
@@ -12,7 +19,10 @@ const Body = () => {
           <p>Open a Karinderya via:</p>
           <LoginBtn />
           <p className="PP">
-            Read our <a href="#">Privacy Policy</a>
+            Read our{" "}
+            <a className="privpol" onClick={handleClick}>
+              Privacy Policy
+            </a>
           </p>
         </div>
         <SampleSection />

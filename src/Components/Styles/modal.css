@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* Modal Content */
 .modal-content {
   background: #fff;

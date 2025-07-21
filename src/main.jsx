@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Home from "./Home";
+import PrivacyPolicy from "./PrivacyPolicy";
 import "./index.css";
 import SpotifyCallback from "./SpotifyCallback";
 
@@ -15,6 +16,7 @@ createRoot(root).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="home" element={<Home />} />
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="spotify">
           <Route path="callback" element={<SpotifyCallback />} />
         </Route>
