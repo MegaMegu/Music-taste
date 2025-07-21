@@ -2,13 +2,16 @@
 
 <h2 align="center"> Discover Your Music Taste, Unleash Your Unique Sound </h2>
 
-![Last Commit](https://img.shields.io/badge/last%20commit-today-blue.svg)
+<p align="center">
+![Last Commit](https://img.shields.io/github/last-commit/SeanMegusean/Music-taste)
 ![JavaScript](https://img.shields.io/badge/javascript-52.6%25-yellow.svg)
 ![Languages](https://img.shields.io/badge/languages-3-blue.svg)
+</p>
 
 ---
-
+<h2 align="center">
 ## ✨ Built with the tools and technologies:
+</h2>
 
 ![JSON](https://img.shields.io/badge/-JSON-black?logo=json&logoColor=white)
 ![Markdown](https://img.shields.io/badge/-Markdown-black?logo=markdown&logoColor=white)
