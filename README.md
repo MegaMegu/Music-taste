@@ -86,7 +86,7 @@ To run the app locally:
 
 ```bash
 npm run dev
-- Then open http://localhost:5173 in your browser. Login via Spotify to begin using the dashboard.
+#- Then open http://localhost:5173 in your browser. Login via Spotify to begin using the dashboard.
 ```
 
 ### 🧪 Testing
@@ -95,7 +95,7 @@ To run tests:
 
 ```bash
 npm run test
-- You can configure and extend testing with tools like Vitest or Jest.
+#- You can configure and extend testing with tools like Vitest or Jest.
 ```
 
 [🔝 Return to Top](#music-taste)
