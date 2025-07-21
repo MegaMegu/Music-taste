@@ -1,5 +1,3 @@
-this is what i fucking meant earlier i wanted you to create this
-
 <h1 align="center">MUSIC-TASTE</h1>
 
 <h2 align="center">Discover Your Music Taste, Unleash Your Unique Sound</h2>
