@@ -24,3 +24,57 @@
 <p align="center">
   <em>This project explores your music listening habits and reveals your musical personality using modern web technologies.</em>
 </p>
+
+
+## 📚 Table of Contents
+
+- [Overview](#overview)
+- [Why Music-Taste?](#why-music-taste)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+
+---
+
+## 🧠 Overview
+
+**Music-Taste** is a developer-centric tool for creating personalized music insights by integrating Spotify data into a sleek React application. Built with modern tools like **Vite**, it offers a fast, flexible foundation for building engaging music analytics platforms.
+
+---
+
+## 💡 Why Music-Taste?
+
+This project empowers developers to craft dynamic, user-friendly music dashboards with ease. Its core features include:
+
+- 🧩 **Fast Development** – Optimized with **Vite** for rapid module updates and HMR.
+- 🎵 **Secure Spotify Integration** – Handles **Auth authentication** with robust token management.
+- 🎨 **Customizable UI** – Modular components for personalization and interactive data visualization.
+- 📊 **Engagement Tracking** – Real-time download metrics stored in **Redis**.
+- 🖼️ **Rich Visuals** – Dynamic sections, modals, and animations for an engaging user experience.
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+Before installing, make sure you have the following:
+
+- **Programming Language:** JavaScript
+- **Package Manager:** npm
+
+### 📦 Installation
+
+To build and run Music-Taste locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/SeanMegusean/Music-taste.git
+
+# 2. Navigate into the project folder
+cd Music-taste
+
+# 3. Install dependencies
+npm install
