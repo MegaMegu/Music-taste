@@ -1,4 +1,4 @@
-# 🎵 MUSIC-TASTE
+<h1 align="center">MUSIC-TASTE</h1>
 
 _Discover Your Music Taste, Unleash Your Unique Sound_
 
