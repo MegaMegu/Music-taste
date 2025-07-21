@@ -52,11 +52,6 @@ const PrivacyPolicy = () => {
             </a>
             .
           </p>
-
-          <p>
-            If you have any questions or concerns about this policy, feel free
-            to contact us at: <strong>your-email@example.com</strong>
-          </p>
         </div>
       </div>
       <Footer />
