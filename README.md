@@ -1,6 +1,6 @@
 <h1 align="center">MUSIC-TASTE</h1>
 
-_Discover Your Music Taste, Unleash Your Unique Sound_
+<h2 align="center"> Discover Your Music Taste, Unleash Your Unique Sound </h2>
 
 ![Last Commit](https://img.shields.io/badge/last%20commit-today-blue.svg)
 ![JavaScript](https://img.shields.io/badge/javascript-52.6%25-yellow.svg)
