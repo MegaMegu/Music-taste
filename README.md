@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/languages-3-blue.svg" alt="Languages"/>
 </p>
 
-<h2 align="center">✨Built with the tools and technologies:</h2>
+<h2 align="center">✨Built with the tools and technologies✨</h2>
 
 <p align="center">
   <img src="https://img.shields.io/badge/-JSON-black?logo=json&logoColor=white" />
