@@ -51,11 +51,11 @@ const Modal = ({ open, onClose }) => {
           Developed by{" "}
           <strong>
             👾
-            <a href="https://github.com/retsaeiouu" target="_blank">
+            <a href="https://github.com/richardluyangborja" target="_blank">
               Richard
             </a>{" "}
             & 🤖
-            <a href="https://github.com/SeanMegusean" target="_blank">
+            <a href="https://github.com/MegaMegu" target="_blank">
               Sean
             </a>
           </strong>

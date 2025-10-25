@@ -59,11 +59,11 @@ const Footer = ({ backgroundStyle }) => {
       </div>
       <p className="credits">
         An App by{" "}
-        <a href="https://github.com/retsaeiouu" target="_blank">
+        <a href="https://github.com/richardluyangborja" target="_blank">
           Richard
         </a>{" "}
         &{" "}
-        <a href="https://github.com/SeanMeguSean" target="_blank">
+        <a href="https://github.com/MegaMegu" target="_blank">
           Sean
         </a>
       </p>

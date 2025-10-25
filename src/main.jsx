@@ -17,6 +17,8 @@ createRoot(root).render(
         <Route path="/" element={<App />} />
         <Route path="home" element={<Home />} />
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
+        {/* Top-level callback route so redirect URIs that point to /callback work */}
+        <Route path="callback" element={<SpotifyCallback />} />
         <Route path="spotify">
           <Route path="callback" element={<SpotifyCallback />} />
         </Route>
